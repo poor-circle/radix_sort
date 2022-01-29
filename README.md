@@ -4,7 +4,7 @@ A high performence Cross-platform (parallel) STL-like LSD radix sort algorithm b
 # Usage
 
 ```cpp
-{
+    {
         std::vector<int> ar={2,3,1};
         radix_sort(ar.begin(),ar.end());
         //support signed number
