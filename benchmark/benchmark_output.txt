@@ -1,4 +1,6 @@
 //i9-9900k 4.7Ghz DDR4 3000mhz
+//Compiler: Microsoft Visual C++ 2022, release mode.
+
 std::sort used time(1000000 int):60ms
 std::stable_sort used time(1000000 int):54ms
 radix_sort used time(1000000 int):5ms
