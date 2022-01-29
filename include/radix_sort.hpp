@@ -272,7 +272,7 @@ void radix_sort(Iter first, Iter second, ExecutionPolicy&& policy, typename std:
 template <typename T>
 struct radix_trait<T*>
 {
-	static constexpr std::size_t radix_size = sizeof(T) / sizeof(unsigned char);
+	static constexpr std::size_t radix_size = sizeof(T*) / sizeof(unsigned char);
 	template <size_t index>
 	static unsigned char get(T* const & obj) noexcept
 	{
@@ -359,8 +359,8 @@ struct radix_trait<std::pair<p1, p2>>
 	{
 		static_assert(index < radix_size);
 		if constexpr (index < sizeof(p2))
-			return radix_trait<p2>::get<index>(obj.second);
+			return radix_trait<p2>::template get<index>(obj.second);
 		else
-			return radix_trait<p1>::get<index - sizeof(p2)>(obj.first);
+			return radix_trait<p1>::template get<index - sizeof(p2)>(obj.first);
 	}
 };
