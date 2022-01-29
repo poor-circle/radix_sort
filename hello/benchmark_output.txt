@@ -1,0 +1,97 @@
+//i9-9900k 4.7Ghz DDR4 3000mhz
+std::sort used time(1000000 int):60ms
+std::stable_sort used time(1000000 int):54ms
+radix_sort used time(1000000 int):5ms
+std::sort(par) used time(1000000 int):16ms
+std::stable_sort(par) used time(1000000 int):18ms
+radix_sort(par) used time(1000000 int):4ms
+std::sort used time(1000000 unsigned __int64):60ms
+std::stable_sort used time(1000000 unsigned __int64):59ms
+radix_sort used time(1000000 unsigned __int64):15ms
+std::sort(par) used time(1000000 unsigned __int64):11ms
+std::stable_sort(par) used time(1000000 unsigned __int64):17ms
+radix_sort(par) used time(1000000 unsigned __int64):10ms
+std::sort used time(1000000 struct std::pair<int,unsigned int>):79ms
+std::stable_sort used time(1000000 struct std::pair<int,unsigned int>):66ms
+radix_sort used time(1000000 struct std::pair<int,unsigned int>):16ms
+std::sort(par) used time(1000000 struct std::pair<int,unsigned int>):12ms
+std::stable_sort(par) used time(1000000 struct std::pair<int,unsigned int>):17ms
+radix_sort(par) used time(1000000 struct std::pair<int,unsigned int>):9ms
+std::sort used time(1000000 struct std::pair<unsigned __int64,unsigned __int64>):61ms
+std::stable_sort used time(1000000 struct std::pair<unsigned __int64,unsigned __int64>):58ms
+radix_sort used time(1000000 struct std::pair<unsigned __int64,unsigned __int64>):27ms
+std::sort(par) used time(1000000 struct std::pair<unsigned __int64,unsigned __int64>):11ms
+std::stable_sort(par) used time(1000000 struct std::pair<unsigned __int64,unsigned __int64>):16ms
+radix_sort(par) used time(1000000 struct std::pair<unsigned __int64,unsigned __int64>):16ms
+std::sort used time(10000000 int):707ms
+std::stable_sort used time(10000000 int):648ms
+radix_sort used time(10000000 int):63ms
+std::sort(par) used time(10000000 int):108ms
+std::stable_sort(par) used time(10000000 int):206ms
+radix_sort(par) used time(10000000 int):26ms
+std::sort used time(10000000 unsigned __int64):706ms
+std::stable_sort used time(10000000 unsigned __int64):670ms
+radix_sort used time(10000000 unsigned __int64):175ms
+std::sort(par) used time(10000000 unsigned __int64):113ms
+std::stable_sort(par) used time(10000000 unsigned __int64):210ms
+radix_sort(par) used time(10000000 unsigned __int64):92ms
+std::sort used time(10000000 struct std::pair<int,unsigned int>):861ms
+std::stable_sort used time(10000000 struct std::pair<int,unsigned int>):782ms
+radix_sort used time(10000000 struct std::pair<int,unsigned int>):196ms
+std::sort(par) used time(10000000 struct std::pair<int,unsigned int>):136ms
+std::stable_sort(par) used time(10000000 struct std::pair<int,unsigned int>):229ms
+radix_sort(par) used time(10000000 struct std::pair<int,unsigned int>):88ms
+std::sort used time(10000000 struct std::pair<unsigned __int64,unsigned __int64>):737ms
+std::stable_sort used time(10000000 struct std::pair<unsigned __int64,unsigned __int64>):718ms
+radix_sort used time(10000000 struct std::pair<unsigned __int64,unsigned __int64>):304ms
+std::sort(par) used time(10000000 struct std::pair<unsigned __int64,unsigned __int64>):128ms
+std::stable_sort(par) used time(10000000 struct std::pair<unsigned __int64,unsigned __int64>):225ms
+radix_sort(par) used time(10000000 struct std::pair<unsigned __int64,unsigned __int64>):177ms
+std::sort used time(100000000 int):8164ms
+std::stable_sort used time(100000000 int):7514ms
+radix_sort used time(100000000 int):632ms
+std::sort(par) used time(100000000 int):1150ms
+std::stable_sort(par) used time(100000000 int):2493ms
+radix_sort(par) used time(100000000 int):260ms
+std::sort used time(100000000 unsigned __int64):8169ms
+std::stable_sort used time(100000000 unsigned __int64):7777ms
+radix_sort used time(100000000 unsigned __int64):1782ms
+std::sort(par) used time(100000000 unsigned __int64):1218ms
+std::stable_sort(par) used time(100000000 unsigned __int64):2565ms
+radix_sort(par) used time(100000000 unsigned __int64):900ms
+std::sort used time(100000000 struct std::pair<int,unsigned int>):9994ms
+std::stable_sort used time(100000000 struct std::pair<int,unsigned int>):9129ms
+radix_sort used time(100000000 struct std::pair<int,unsigned int>):1938ms
+std::sort(par) used time(100000000 struct std::pair<int,unsigned int>):1472ms
+std::stable_sort(par) used time(100000000 struct std::pair<int,unsigned int>):2854ms
+radix_sort(par) used time(100000000 struct std::pair<int,unsigned int>):903ms
+std::sort used time(100000000 struct std::pair<unsigned __int64,unsigned __int64>):8587ms
+std::stable_sort used time(100000000 struct std::pair<unsigned __int64,unsigned __int64>):8399ms
+radix_sort used time(100000000 struct std::pair<unsigned __int64,unsigned __int64>):3045ms
+std::sort(par) used time(100000000 struct std::pair<unsigned __int64,unsigned __int64>):1619ms
+std::stable_sort(par) used time(100000000 struct std::pair<unsigned __int64,unsigned __int64>):2816ms
+radix_sort(par) used time(100000000 struct std::pair<unsigned __int64,unsigned __int64>):1795ms
+std::sort used time(1000000000 int):91407ms
+std::stable_sort used time(1000000000 int):82896ms
+radix_sort used time(1000000000 int):6402ms
+std::sort(par) used time(1000000000 int):12537ms
+std::stable_sort(par) used time(1000000000 int):27210ms
+radix_sort(par) used time(1000000000 int):2603ms
+std::sort used time(1000000000 unsigned __int64):91867ms
+std::stable_sort used time(1000000000 unsigned __int64):87136ms
+radix_sort used time(1000000000 unsigned __int64):17831ms
+std::sort(par) used time(1000000000 unsigned __int64):13478ms
+std::stable_sort(par) used time(1000000000 unsigned __int64):30332ms
+radix_sort(par) used time(1000000000 unsigned __int64):10726ms
+std::sort used time(1000000000 struct std::pair<int,unsigned int>):111511ms
+std::stable_sort used time(1000000000 struct std::pair<int,unsigned int>):98042ms
+radix_sort used time(1000000000 struct std::pair<int,unsigned int>):19457ms
+std::sort(par) used time(1000000000 struct std::pair<int,unsigned int>):16437ms
+std::stable_sort(par) used time(1000000000 struct std::pair<int,unsigned int>):31772ms
+radix_sort(par) used time(1000000000 struct std::pair<int,unsigned int>):10785ms
+std::sort used time(1000000000 struct std::pair<unsigned __int64,unsigned __int64>):96751ms
+std::stable_sort used time(1000000000 struct std::pair<unsigned __int64,unsigned __int64>):93464ms
+radix_sort used time(1000000000 struct std::pair<unsigned __int64,unsigned __int64>):33830ms
+std::sort(par) used time(1000000000 struct std::pair<unsigned __int64,unsigned __int64>):23532ms
+std::stable_sort(par) used time(1000000000 struct std::pair<unsigned __int64,unsigned __int64>):41328ms
+radix_sort(par) used time(1000000000 struct std::pair<unsigned __int64,unsigned __int64>):24608ms
