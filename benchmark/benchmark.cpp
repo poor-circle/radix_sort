@@ -5,7 +5,7 @@
 #include <format>
 #include <random>
 
-#include "radix_sort.hpp"
+#include "../include/radix_sort.hpp"
 
 template<typename p1, typename p2, typename Op>
 void test_pair(size_t test_size, size_t test_round, Op op, std::string sort_name)
