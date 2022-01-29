@@ -60,8 +60,11 @@ A high performence Cross-platform (parallel) STL-like LSD radix sort algorithm b
 
 ## benchmark
 
+i9-9900k, msvc release, ddr4-3000mhz
+
 std::sort used time(1 billion int32):91407ms       
 std::stable_sort used time(1 billion int32):82896ms           
-radix_sort used time(1 billion int32):6402ms          
+radix_sort used time(1 billion int32):6402ms   
+radix_sort(parallel) used time(1 billion int32):2603ms    
              
 radix_sort is 14.28x faster than std::sort    
