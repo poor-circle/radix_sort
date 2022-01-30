@@ -16,7 +16,7 @@ A high performence Cross-platform (parallel) STL-like LSD radix sort algorithm b
 }
 {
     std::vector<size_t> ar={2,3,1};
-    radix_sort<radix_trait_greater<unsigned short>>(ar.begin(),ar.end());
+    radix_sort<radix_trait_greater<size_t>>(ar.begin(),ar.end());
     //descending order
 }
 {
