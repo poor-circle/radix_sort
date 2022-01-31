@@ -105,8 +105,7 @@ void radix_sort_impl(Iter first, Iter second, typename std::iterator_traits<Iter
 	}
 	else if constexpr (radix_size % 2)
 	{
-		for (size_t j = 0, length = std::distance(first, second); j < length; ++j)
-			first[j] = std::move(buffer[j]);
+		std::move(buffer, buffer + std::distance(first, second), first);
 	}
 }
 
@@ -162,19 +161,7 @@ void parallel_radix_sort_impl(Iter first, Iter second, unsigned int thrd_lim, ty
 	}
 	else if constexpr (radix_size % 2)
 	{
-		vector<future<void>> wait_works;
-		wait_works.reserve(thrd_lim - 1);
-		auto work = [first, buffer](auto beg, auto end) {
-			for (size_t k = beg; k < end; ++k)
-				first[k] = std::move(buffer[k]);
-		};
-		auto j = 0u;
-		for (; j < thrd_lim - 1; ++j)
-		{
-			auto beg = j * parallel_width, end = beg + parallel_width;
-			wait_works.emplace_back(async(launch::async, work, beg, end));
-		}
-		work(j * parallel_width, length);
+		std::move(buffer, buffer + length, first);
 	}
 }
 
@@ -262,7 +249,7 @@ void radix_sort(Iter first, Iter second, ExecutionPolicy&& policy, typename std:
 template <typename Trait, typename Iter, typename ExecutionPolicy>
 void radix_sort(Iter first, Iter second, ExecutionPolicy&& policy, typename std::iterator_traits<Iter>::value_type* buffer = nullptr)
 {
-	if constexpr (std::is_same_v<std::remove_cvref_t<ExecutionPolicy>, std::execution::parallel_policy> || std::is_same_v<std::remove_cvref_t<ExecutionPolicy>, std::execution::parallel_unsequenced_policy>)
+	if constexpr (std::is_same_v<std::remove_cvref_t<ExecutionPolicy>, std::execution::parallel_policy> || std::is_same_v<std::remove_cvref_t<ExecutionPolicy>, std::execution::parallel_unsequenced_policy> || std::is_same_v<std::remove_cvref_t<ExecutionPolicy>, std::execution::parallel_unsequenced_policy>)
 		parallel_radix_sort<Trait>(first, second, buffer);
 	else
 		radix_sort<Trait>(first, second, buffer);
