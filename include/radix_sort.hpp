@@ -249,7 +249,7 @@ void radix_sort(Iter first, Iter second, ExecutionPolicy&& policy, typename std:
 template <typename Trait, typename Iter, typename ExecutionPolicy>
 void radix_sort(Iter first, Iter second, ExecutionPolicy&& policy, typename std::iterator_traits<Iter>::value_type* buffer = nullptr)
 {
-	if constexpr (std::is_same_v<std::remove_cvref_t<ExecutionPolicy>, std::execution::parallel_policy> || std::is_same_v<std::remove_cvref_t<ExecutionPolicy>, std::execution::parallel_unsequenced_policy> || std::is_same_v<std::remove_cvref_t<ExecutionPolicy>, std::execution::parallel_unsequenced_policy>)
+	if constexpr (std::is_same_v<std::remove_cvref_t<ExecutionPolicy>, std::execution::parallel_policy> || std::is_same_v<std::remove_cvref_t<ExecutionPolicy>, std::execution::parallel_unsequenced_policy>)
 		parallel_radix_sort<Trait>(first, second, buffer);
 	else
 		radix_sort<Trait>(first, second, buffer);
